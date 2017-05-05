@@ -1,0 +1,177 @@
+body {
+	background-color: #D3D3D3;
+}
+
+
+#site {
+	padding: 20px;
+	padding-left: 10px;
+	background-color: blue;
+	width: 600px;
+	height: 1100px;
+	border-radius: 5px;
+	color: white;
+}
+
+#site #header {
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #00008B;
+	width: 98%;
+	height: 9%;
+	border-radius: 5px;	
+	color: white;
+}
+
+#header #logo {
+	position: relative;
+	top: 4px;
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #D3D3D3;
+	width: 97%;
+	height: 20%;
+	border-radius: 5px;	
+	color: white;	
+}
+
+#header #menu {
+	position: relative;
+	top: 8px;
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #D3D3D3;
+	width: 97%;
+	height: 20%;
+	border-radius: 5px;	
+	color: white;	
+}
+
+#site #banner {
+	position: relative;
+	top: 6px;
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #00008B;
+	width: 98%;
+	height: 5%;
+	border-radius: 5px;	
+	color: white;
+}
+
+#banner #comentario {
+	position: relative;
+	top: 4px;
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #D3D3D3;
+	width: 97%;
+	height: 20%;
+	border-radius: 5px;	
+	color: white;
+}
+
+#site #conteudo {
+	position: relative;
+	top: 12px;
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #00008B;
+	width: 98%;
+	height: 65%;
+	border-radius: 5px;	
+	color: white;	
+}
+
+#conteudo #esquerdo {
+	position: relative;
+	top: 4px;
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #D3D3D3;
+	width: 97%;
+	height: 65%;
+	border-radius: 5px;	
+	color: white;
+}
+
+#conteudo h2, h3, p , table{
+	color:black;
+}
+
+#esquerdo .noticia1 {
+	position: relative;
+	top: 6px;
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #B0C4DE;
+	width: 97%;
+	height: 22%;
+	border-radius: 5px;	
+	color: white;
+}
+
+
+#esquerdo .noticia2 {
+	position: relative;
+	top: 8px;
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #B0C4DE;
+	width: 97%;
+	height: 22%;
+	border-radius: 5px;	
+	color: white;
+}
+
+#esquerdo .noticia3 {
+	position: relative;
+	top: 10px;
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #B0C4DE;
+	width: 97%;
+	height: 22%;
+	border-radius: 5px;	
+	color: white;
+}
+
+#conteudo #direito {
+	position: relative;
+	top: 10px;
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #D3D3D3;
+	width: 97%;
+	height: 25%;
+	border-radius: 5px;	
+	color: white;
+}
+
+#site #footer {
+	position: relative;
+	top: 15px;
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #00008B;
+	width: 98%;
+	height: 8%;
+	border-radius: 5px;	
+	color: white;
+}
+
+#footer #copyrighter {
+	position: relative;
+	top: 4px;
+	padding: 10px;
+	padding-left: 10px;
+	background-color: #D3D3D3;
+	width: 97%;
+	height: 50%;
+	border-radius: 5px;	
+	color: white;
+}
+
+table, th, td {
+	border: 1px solid black;
+}

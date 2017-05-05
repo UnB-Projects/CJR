@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="style.css"></style>
+	<title>Exercício 4</title>
+</head>
+<body>
+	<h1>Formulário</h1>
+	<form action="servidor.html" method="GET">
+		<label for="nome">Nome:</label>
+		<input type="text" name="nome" placeholder="Nome">
+		<br>
+
+		<label for="email">Email:</label>
+		<input type="email" name="email" placeholder="Email">
+		<br>
+
+		<label for="senha">Senha:</label>
+		<input type="password" name="senha" placeholder="Senha">
+		<br>
+		<br>
+
+		<span>Sexo:</span>
+		<br>
+		<input type="radio" name="masculino">
+		<label for="masculino">Masculino</label>
+		<br>
+		<input type="radio" name="feminino">
+		<label for="feminino">Feminino</label>
+		<br><br>
+
+		<span>Tecnologias:</span>
+		<br>
+		<input type="checkbox" name="html">
+		<label for="html">HTML</label>
+		<br>
+		<input type="checkbox" name="css">
+		<label for="css">CSS</label>
+		<br>
+		<input type="checkbox" name="java">
+		<label for="java">Java</label>
+		<br>
+		<input type="checkbox" name="php">
+		<label for="php">PHP</label>
+
+		<span>Descrição Pessoal:</span>
+		<br>
+		<textarea rows="7" cols="25" placeholder="Digite aqui..."></textarea>
+		<br><br>
+
+		<span>Opção: </span>
+			<select name="Opção">
+				<option value="op1">Opção1</option>
+				<option value="op2">Opção2</option>
+				<option value="op3">Opção3</option>
+			</select>
+			<br><br>
+			
+			<input type="submit" name="Enviar">
+			<br>
+			<input type="reset" value="Limpar">
+	</form>
+</body>
+</html>
