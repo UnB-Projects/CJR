@@ -73,7 +73,8 @@ JOIN empresa.trabalhaem
 ON empregado.codemp = trabalhaem.codemp
 JOIN empresa.projeto
 ON trabalhaem.codproj = projeto.codproj
-WHERE projeto.codproj = 3;
+WHERE projeto.codproj = 3
+ORDER BY trabalhaem.horas DESC;
 
 --16 Obter códigos de empregados que trabalham mais de 10 horas em algum projeto.
 -- O resultado da consulta não deve ter repetições de códigos de empregados.
