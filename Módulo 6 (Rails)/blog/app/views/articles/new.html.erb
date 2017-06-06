@@ -1,0 +1,17 @@
+<div class="nav">
+    <ul class="pull-left">
+        <%= link_to 'Index', controller: 'welcome' %>
+    </ul>
+    <ul class="pull-left">
+      <%= link_to 'Blog', controller: 'articles' %>
+    </ul>
+    <ul class="pull-left">
+      <%= link_to 'Novo Artigo', new_article_path %>
+    </ul>
+</div>
+
+<h1>Novo Artigo</h1>
+ 
+<%= render 'form' %>
+
+<%= link_to 'Voltar', articles_path %>
