@@ -1,30 +1,19 @@
-<div class="nav">
-    <ul class="pull-left">
-        <%= link_to 'Index', controller: 'welcome' %>
-    </ul>
-    <ul class="pull-left">
-      <%= link_to 'Blog', controller: 'articles' %>
-    </ul>
-    <ul class="pull-left">
-      <%= link_to 'Novo Artigo', new_article_path %>
-    </ul>
+<%= render 'nav' %>
+<div class="container">
+  <h2>
+    <%= @article.title %>
+  </h2>
+  <div class="container col-md-8 col-md-offset-0" style="border-left: 1px solid;">
+    <%= @article.text %>
+    <br>
+    <%= link_to 'Editar', edit_article_path(@article), class: "btn btn-info" %>
+  </div>
+
+  <div class="container col-md-5 col-md-offset-0">
+    <h3>Comentários</h3>
+    <%= render @article.comments %>
+
+    <h4>Adicionar um comentário:</h4>
+    <%= render 'comments/form' %>
+  </div>
 </div>
-
-<p>
-  <strong>Título:</strong>
-  <%= @article.title %>
-</p>
- 
-<p>
-  <strong>Texto:</strong>
-  <%= @article.text %>
-</p>
-
-<h2>Comentários</h2>
-<%= render @article.comments %>
-
-<h2>Adicionar um comentário:</h2>
-<%= render 'comments/form' %>
-
-<%= link_to 'Editar', edit_article_path(@article) %> |
-<%= link_to 'Voltar', articles_path %>

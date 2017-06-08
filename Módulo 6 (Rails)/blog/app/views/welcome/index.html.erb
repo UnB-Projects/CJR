@@ -1,11 +1,7 @@
-<div class="nav">
-    <ul class="pull-left">
-      	<%= link_to 'Index', controller: 'welcome' %>
-    </ul>
-    <ul class="pull-left">
-    	<%= link_to 'Blog', controller: 'articles' %>
-    </ul>
-</div>
+<%= render 'nav' %>
 
-<h1>Bem-vindo ao Blog!</h1>
-<h3>Dono do site: Igor Figueira Pinheiro da Silva</h3>
+<div class="container col-md-offset-4"">
+	<h1>Bem-vindo ao Blog</h1>
+	<%= image_tag("rails.png") %>
+</div>
+	<h3 style="text-align: center;">Blog criado por Igor Figueira Pinheiro da Silva</h3>

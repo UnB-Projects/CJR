@@ -1,33 +1,22 @@
-<div class="nav">
-    <ul class="pull-left">
-        <%= link_to 'Index', controller: 'welcome' %>
-    </ul>
-    <ul class="pull-left">
-      <%= link_to 'Blog', controller: 'articles' %>
-    </ul>
-    <ul class="pull-left">
-      <%= link_to 'Novo Artigo', new_article_path %>
-    </ul>
-</div>
+<%= render 'nav' %>
 
-<h1>Lista de artigos</h1>
- 
-<table class="table table-bordered">
-  <tr>
-    <th>Título</th>
-    <th colspan="4">Texto</th>
-  </tr>
- 
-  <% @articles.each do |article| %>
+<div class="container"> 
+  <h1>Lista de artigos</h1>
+  <table class="table table-bordered">
     <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Mostrar', article_path(article), class: "btn btn-primary" %></td>
-      <td><%= link_to 'Editar', edit_article_path(article), class: "btn btn-success" %></td>
-      <td><%= link_to 'Apagar', article_path(article),
-              method: :delete,
-              data: { confirm: 'Tem certeza?' },
-              class: "btn btn-danger"%></td>
+      <th colspan="4">Título</th>
     </tr>
-  <% end %>
-</table>
+   
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= link_to 'Mostrar', article_path(article), class: "btn btn-primary" %></td>
+        <td><%= link_to 'Editar', edit_article_path(article), class: "btn btn-success" %></td>
+        <td><%= link_to 'Apagar', article_path(article),
+                method: :delete,
+                data: { confirm: 'Tem certeza?' },
+                class: "btn btn-danger"%></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
